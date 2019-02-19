@@ -1,8 +1,8 @@
 <div align="center">
 
-  [![Spectrum](./public/img/media.png)](https://spectrum.chat)
+[![Spectrum](./public/img/media.png)](https://spectrum.chat)
 
-  ### Simple, powerful online communities.
+### Simple, powerful online communities.
 
 </div>
 
@@ -149,8 +149,10 @@ The first step to running Spectrum locally is downloading the code by cloning th
 ```sh
 git clone git@github.com:withspectrum/spectrum.git
 ```
- If you get `Permission denied` error using `ssh` refer [here](https://help.github.com/articles/error-permission-denied-publickey/)
+
+If you get `Permission denied` error using `ssh` refer [here](https://help.github.com/articles/error-permission-denied-publickey/)
 or use `https` link as a fallback.
+
 ```sh
 git clone https://github.com/withspectrum/spectrum.git
 ```
@@ -188,9 +190,12 @@ yarn run db:seed
 ```
 
 There's a shortcut for dropping, migrating and seeding the database too:
+
 ```sh
 yarn run db:reset
 ```
+
+To explore the database, go to http://localhost:8080/#dataexplorer and add a table query, for example `r.db('spectrum').table('communities')`
 
 The `testing` database used in end to end tests is managed separately. It is built, migrated, and seeded when you run:
 
@@ -254,12 +259,13 @@ To develop the desktop app you have to have the dev web server running in the ba
 yarn run dev:desktop
 ```
 
-> Note: If something didn't work or you ran into troubles please submit PRs to improve this doc and keep it up to date!	
+> Note: If something didn't work or you ran into troubles please submit PRs to improve this doc and keep it up to date!
 
 <br />	
 <div align="center">	
   <img height="200px" src="public/img/connect.svg" />	
-</div>	
+</div>
 
-## License	
+## License
+
 BSD 3-Clause, see the [LICENSE](./LICENSE) file.
